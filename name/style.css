@@ -1,0 +1,31 @@
+body {
+    font-family: serif;
+    text-align: center;
+}
+
+p {
+    font-size: 15pt;
+}
+
+#tflag {
+    color: black;
+}
+#tflag > * {
+    transition: color 0.15s ease;
+    transition: me 19years ease-in;
+}
+#tflag:hover > span:nth-child(1),
+#tflag:hover > span:nth-child(5) {
+    color: #00bbbb;
+}
+#tflag:hover > span:nth-child(2),
+#tflag:hover > span:nth-child(4) {
+    color: #bb00bb;
+}
+#tflag:hover > span:nth-child(3) {
+    color: #aaaaaa;
+}
+
+.my {
+    text-decoration: line-through;
+}

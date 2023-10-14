@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--
+    This personal website of mine does not use any frameworks.
+    Disabling JS does not make it impossible to view.
+    This is partly to demonstrate that you can still make websites without unnecessary bloat.
+-->
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" value="Личный сайт portasynthinca3">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+        <title>portasynthinca3</title>
+    </head>
+    <body>
+        <!-- js notice (automatically made invisible by js, assuming it is enabled) -->
+        <div id="js-notice">
+            <div>
+                Это необязательно, но Вы можете включить JavaScript для больших возможностей.
+            </div>
+        </div>
+        <script>document.getElementById("js-notice").style.visibility = "hidden";</script>
+
+        <!-- fancy abbreviations are hosted here -->
+        <div id="abbr-host"></div>
+
+        <!-- header -->
+        <header>
+            <a id="nickname" href="./name/index.html"><abbr title="Показать имя">portasynthinca3</abbr></a>
+            <a class="icon" href="https://github.com/portasynthinca3" target="_blank"><img src="./icons/github.svg" alt="GitHub"></a>
+        </header>
+
+        <!-- main -->
+        <main>
+            <!-- "hello" in different languages -->
+            <table id="hellos">
+                <tr id="hellos-themselves">
+                    <td><abbr title="Оставить русский"><a href="./ru.html">Привет.</a></abbr></td>
+                    <td style="--pos: 1"><abbr title="Switch to English"><a href="./en.html">Hi.</a></abbr></td>
+                    <td style="--pos: 2">Hallo.</td>
+                    <td style="--pos: 3">Cәлам.</td>
+                    <td style="--pos: 4">Привіт.</td>
+                    <td style="--pos: 5">Salut.</td>
+                    <td style="--pos: 6">.أهلاً</td>
+                    <td style="--pos: 7">Cześć...</td>
+                </tr>
+                <tr id="hello-levels">
+                    <td style="--pos: 0">Родной</td>
+                    <td style="--pos: 1">C1</td>
+                    <td style="--pos: 2">A2</td>
+                </tr>
+            </table>
+
+            <!-- introduction -->
+            <p id="introduction">
+                Я <abbr title="прямоходящее млекопитающее">человек</abbr> из
+                <abbr title="глобальная компьютерная сеть, основанная на пакетах">Интернета</abbr>.
+                В основном я занимаюсь <abbr title="кричание на экраны">программированием</abbr>,
+                <abbr title="кричание на печатные платы">электроникой</abbr> и
+                <abbr title="кричание. просто кричание">музыкой</abbr>.
+                Большинство моих проектов, связанных с программированием, можно
+                найти на <a href="https://github.com/portasynthinca3" target="_blank">GitHub</a>.
+            </p>
+
+            <!-- projects -->
+            <div id="projects">
+                <!-- alive -->
+                <div style="--left-color: #752afe; --right-color: #fe392a">
+                    <img src="./images/deut.webp" alt="Демонстрация Deuterium: сообщение пользователя и ответ на него от бота">
+                    <h1><a href="https://github.com/portasynthinca3/deutexrium" target="_blank">Deuterium</a></h1>
+                    <p>
+                        Discord-бот, генерирующий сообщения, похожие на сообщения пользователей.
+                        В настоящий момент обслуживает более 1000 серверов. Ранее был написан
+                        на Python, сейчас - на Elixir. Используются собственные библиотека
+                        генерации текста, основанная на цепях Маркова, и база данных. Ранее имел
+                        возможность распознавания и синтеза речи с прослойкой на TypeScript.
+                    </p>
+                </div>
+                <div style="--left-color: #51fdda; --right-color: #99d4ff">
+                    <img src="./images/speedapi.webp" alt="Демонстрация SpeedAPI: пример кода определения протокола">
+                    <h1><a href="https://github.com/speedapi" target="_blank">SpeedAPI</a></h1>
+                    <p>
+                        Инструментарий для создания статически и строго типизированных бинарных
+                        протоколов, поддерживающих полнодуплексное общение. Создан в качестве
+                        альтернативы текущим громоздким API. Компилятор языка описания написан
+                        на Python, единственный драйвер написан на TypeScript.
+                    </p>
+                </div>
+                <div style="--left-color: #888888; --right-color: #888888">
+                    <img src="./images/led_panel.webp" alt="Демонстрация LED-панели: показывает время, погоду, спектр аудио и статус проигрывания">
+                    <h1><a href="https://github.com/undefspace/led_panel" target="_blank">LED-панель</a></h1>
+                    <p>
+                        Стоит на подоконнике в прекрасном <a href="https://undef.club" target="_blank">undef.space</a>.
+                        Показывает время, погоду, спектр аудио со <a href="./cat.jpg" target="_blank">ржением</a>
+                        и концентрацию углекислого газа в помещении.
+                        Используется микроконтроллер ESP32, фреймворк ESP-IDF и язык C.
+                    </p>
+                </div>
+                <div style="--left-color: #ffffff; --right-color: #ffffff">
+                    <img src="./images/website_ru.webp" alt="Скриншот этого сайта">
+                    <h1><a href="https://github.com/portasynthinca3/website" target="_blank">Этот сайт</a></h1>
+                    <p>
+                        Написан на ассемблере WASM. В режиме реального времени прорисовывает
+                        страницу и отправляет фреймбуфер в canvas.
+                        <abbr title="HTML, CSS и немножко JS. #безфреймворков">Шутка</abbr>.
+                        Но было бы интересно над таким поработать 🤔
+                    </p>
+                </div>
+
+                <!-- separator -->
+                <div id="project-separator">
+                    <span>↑ Более-менее живые проекты</span>
+                    <hr>
+                    <span>↓ Мёртвые проекты</span>
+                </div>
+
+                <!-- dead -->
+                <div style="--left-color: #ff2b37; --right-color: #ff8b20">
+                    <h1><a href="https://github.com/yamka-app" target="_blank">Yamka</a></h1>
+                    <p>
+                        Мессенджер, похожий на Discord, с поддержкой сквозного шифрования в
+                        личных сообщениях. Использовался бинарный протокол, который стал
+                        прародителем базового протокола SpeedAPI. Бэкенд был написан на Erlang,
+                        фронтэнд - на HTML, CSS и TypeScript без фреймворков.
+                    </p>
+                </div>
+                <div style="--left-color: #ff02f3; --right-color: #ff9003">
+                    <img src="./images/neutron.webp" alt="Демонстрация Neutron: лог загрузки ядра с исключением процессора поверх него">
+                    <h1><a href="https://github.com/portasynthinca3/neutron" target="_blank">Neutron</a></h1>
+                    <p>
+                        Операционная система для персональных компьютеров на архитектуре
+                        x86-64. Ядро ОС могло инициализировать некоторые комплектующие,
+                        загружать и исполнять программы с диска. Дистрибутив поставлял программу
+                        инициализации и простейшую графическую оболочку. Была написана на C.
+                    </p>
+                </div>
+                <div style="--left-color: #ffffff; --right-color: #ffffff">
+                    <h1>Игры</h1>
+                    <p>
+                        На самом деле, игры я пыталась делать с первых дней изучения
+                        программирования, но эта область никогда мне не давалась. В основном
+                        это были мелкие проекты на Unity и C#.
+                    </p>
+                </div>
+            </div>
+
+            <!-- facts -->
+            <div id="facts">
+                Факты обо мне:
+                <ul>
+                    <li>
+                        Я затронула почти все области разработки ПО
+                        <ul>
+                            <li>Разработка игр и машинное обучение нравятся мне меньше всего</li>
+                            <li>Низкоуровневая и встроенная разработка нравятся мне больше всего</li>
+                        </ul>
+                    </li>
+                    <li>Я слишком сильно люблю светодиодные ленты и панели</li>
+                    <li>У меня аллергия на <abbr title="C--">C++</abbr> и Java</li>
+                    <li>Музыка - любовь. <a href="https://open.spotify.com/playlist/6j1K3xvwwXpuYIhHQEGUpS?si=9bb8480fa7294617" target="_blank">Музыка</a> - жизнь.</li>
+                    <li>На данный момент живу в Москве</li>
+                </ul>
+            </div>
+
+            <!-- testimonials -->
+            <div id="testimonials">
+                Отзывы от РЕАЛЬНЫХ людей <span>(да, я украла эту идею у Алины)</span>
+                <ul>
+                    <li>недалеко от меня живёт девушка с таким же именем <a href="https://github.com/mirakuzura" target="_blank">- Тома</a></li>
+                    <li>аня ты такая крутая!! <a href="https://kamillaova.dev" target="_blank">- Камилла 'ова</a></li>
+                    <li>шутки настолько же забавны, насколько взаимодействие с дверью <a href="https://lukflug.github.io" target="_blank">- lukflug</a></li>
+                    <li>Не назову это слишком большим <a href="https://cdn.discordapp.com/attachments/765604949202567208/1155992714379264100/image.png" target="_blank">- lukflug (Deuterium) [BOT]</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            portasynthinca3, 2023-????<br>
+            никакие права не защищены
+            <ul>
+                <li><a target="_blank" href="https://github.com/portasynthinca3">GitHub</a></li>
+                <li><a target="_blank" href="https://instagram.com/portasynthinca3">Instagram</a></li>
+                <li><a target="_blank" href="https://t.me/portasynthinca3">Telegram</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
